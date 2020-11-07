@@ -1,3 +1,5 @@
+import { mathJax } from './mathjax.js';
+
 fetch("27/exe-27_29.html")
   .then(response => response.text())
   .then(html => {
@@ -5,3 +7,7 @@ fetch("27/exe-27_29.html")
     element.innerHTML = html;
 
   });
+
+setTimeout(() => {
+  mathJax();
+}, 300);
