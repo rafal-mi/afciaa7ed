@@ -6,8 +6,8 @@ fetch("27/exe-27_29.html")
     let element = document.getElementById("app");
     element.innerHTML = html;
 
-  });
+  }).then(() => mathJax());
 
 setTimeout(() => {
-  mathJax();
+  //mathJax();
 }, 300);
