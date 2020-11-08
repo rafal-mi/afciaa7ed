@@ -1,6 +1,6 @@
 import { mathJax } from './mathjax.js';
 
-fetch("27/exe-27_29.html")
+fetch("27/exe-27_28.html")
   .then(response => response.text())
   .then(html => {
     let element = document.getElementById("app");
