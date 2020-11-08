@@ -1,5 +1,27 @@
 <h3>Exercise 27.29</h3>
 
-<p>Prove directly from the definitions of maximal and prime ideals that every maximal ideal of a commutative ring
-  \( R \) with unity is a prime ideal.
-</p>
+<div class="exercise-content">
+  <p>Prove directly from the definitions of maximal and prime ideals that every maximal ideal of a commutative ring
+    \( R \) with unity is a prime ideal.
+  </p>
+</div>
+<div class="exercise-solution">
+  <p>
+    Let \( M \) be a maximal ideal and let \( ab \in M \) for some \( a, b \in R \)
+    and let \(a \notin M \). Consider the ideal \( \langle M \cup \{a\} \rangle \). 
+    We have a recipe for it as a submodule to express an element: 
+    a finite sum of products of elements from \( M \) and \( \{ a \} \).
+    That is, the submodule elements are \( m_1 + m_2 a^k + a^{l_1} + \ldots + a^{l_r} \).
+    Since \( M \) is an ideal, the second summand is in \(M \) so this reduces to
+    \( m + a^{l_1} + \ldots + a^{l_r} \). As \(M \) is maximal, the ideal 
+    \( \langle M \cup \{a\} \rangle \) is the whole ring \( R \) so it contains \( 1 \).
+    Now \( b = mb + a^{l_1}b + \ldots + a^{l_r}b = mb + a^{l_1-1}ab + \ldots + a^{l_r-1}ab\).
+    Both \( mb \) and \( ab \) are in \( M \), so all summands are in \( M \),
+    so \( b \in M \).
+    <br>
+    We didn't use the Hint: Argue that the smallest ideal \( \{ ra + m | r \in R, m \in M\} \)
+    as we never had the theory - the recipe for elements of ideal augmented by an element.
+
+
+  </p>
+</div>
