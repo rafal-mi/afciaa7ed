@@ -1,0 +1,23 @@
+{
+  "name": "afciaa7ed",
+  "version": "1.0.0",
+  "description": "Notes to *A First Course in Abstract Algebra, 7th Ed.* by J. B. Fraleigh.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafal-mi/afciaa7ed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafal-mi/afciaa7ed/issues"
+  },
+  "homepage": "https://github.com/rafal-mi/afciaa7ed#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

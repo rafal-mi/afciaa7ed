@@ -1,13 +1,18 @@
 import { mathJax } from './mathjax.js';
 
-fetch("27/exe-27_28.html")
+function loadContent(url) {
+  // 27/exe-27_28.html
+  fetch(url)
   .then(response => response.text())
   .then(html => {
     let element = document.getElementById("app");
     element.innerHTML = html;
 
   }).then(() => mathJax());
+}
 
-setTimeout(() => {
-  //mathJax();
-}, 300);
+window.loadContent = loadContent;
+
+loadContent('27/exe-27_28.html');
+
+
